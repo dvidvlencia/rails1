@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+/*body{
+  background-image: url('sky-sunset-night-space.jpeg');
+  background-size: cover;
+}*/
+.login{
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  background-size: cover;
+  margin-top: -70px;
+}
+
+.signin{
+  background-image: url('sky-sunset-night-space.jpeg');
+}
+.signup{
+  background-image: url('nature-sky.jpg');
+}
+.reset-passwd{
+  background-image: url('dawn-sunset-flying-clouds.jpg');
+}
+
+.login-card{
+  background-color: rgba(103, 65, 114, 0.5);;
+  margin-top: 50px;
+  padding: 30px;
+}
+.signup .login-card{
+  background-color: rgba(52, 152, 219, 0.5);
+}
+.reset-passwd .login-card{
+  background-color: rgba(27, 163, 156, 0.5);
+}
+
+.login-card h2, .login-card .field label, .login-card a{
+  color: white;
+}
+@media screen and (max-width: 360px) {
+  .login-card{
+    margin-top: 30px;
+  }
+}

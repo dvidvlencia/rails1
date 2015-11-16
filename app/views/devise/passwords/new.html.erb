@@ -1,0 +1,20 @@
+<div class="login reset-passwd">
+ <div class="small-12 medium-6 medium-offset-3 columns login-card">
+    <h2>Forgot your password?</h2>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+      <br>
+      <div class="actions">
+        <%= f.submit "Send me reset password instructions", :class => 'button round expand' %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

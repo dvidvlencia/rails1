@@ -1,0 +1,29 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.home-img{
+  height: 520px;
+  margin-top: -70px;
+  background-image: url('market-home.jpg');
+  background-size: cover;
+}
+.info-login{
+  height: 70px;
+  background-color: transparent;
+  text-align: right;
+  padding: 15px;
+  color: white;
+  a{
+    color: white;
+  }
+}
+.info-app{
+  background-color: rgba(25, 181, 254, 1);
+  height: 500px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+footer{
+  height: 250px;
+  background-color: rgb(44, 62, 80);
+}
